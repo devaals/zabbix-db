@@ -1,13 +1,13 @@
 Zabbix NIIAS
 ==========
-
+This Image based on zabbix-db-mariadb of MonitoringArtist.
 [Zabbix NIIAS](https://github.com/devaals/zabbix-db) is a standard Zabbix prepared for Docker world. You must install Zabbix package (rpm, deb, ...) in the old world. Similarly, you need to pull Zabbix Docker image in the Docker world. This Docker image contains standard Zabbix + additional XXL (community) extensions. Routine tasks such as import of Zabbix DB are automated, so it's prepared for easy deployment.
 
 
-Zabbix DB - MariaDB 10.0 [![](https://badge.imagelayers.io/monitoringartist/zabbix-db-mariadb:latest.svg)](https://imagelayers.io/?images=monitoringartist/zabbix-db-mariadb:latest)
+Zabbix DB - MariaDB 10.0
 ========================
 
-This is a MariaDB 10.0 Docker [zabbix/zabbix-db-mariadb](https://hub.docker.com/r/monitoringartist/zabbix-db-mariadb/) 
+This is a MariaDB 10.0 Docker. Based on [zabbix/zabbix-db-mariadb](https://hub.docker.com/r/monitoringartist/zabbix-db-mariadb/) 
 image. Built on top of official [centos:centos7](https://registry.hub.docker.com/_/centos/) 
 image. Inspired by [Tutum](https://github.com/tutumcloud)'s 
 [tutum/mariadb](https://github.com/tutumcloud/tutum-docker-mariadb) image.
