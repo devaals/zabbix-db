@@ -34,6 +34,24 @@ docker run \
 	devaal/zabbix-db:latest
 ```  
 
+Run the image as daemon and bind with parameter "restart-always" it to port 3306:
+
+```  
+docker run \
+	-d \
+	-v /opt/mysql:/var/lib/mesql \
+    	-v /etc/localtime:/etc/localtime:ro
+	--name zabbix-db \
+	--restart=always 
+	-p 3306:3306 \
+	--env="MARIADB_USER=zabbix" \
+	--env="MARIADB_PASS=zabbix" \
+	--env="DB_innodb_buffer_pool_size=512M" \
+	devaal/zabbix-db:latest
+```  
+
+
+
 ## Environmental variables
 You can use environmental variables to config MariaDB. Available variables:
 
